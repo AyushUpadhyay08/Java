@@ -1,0 +1,13 @@
+//Write a java program to change the case of inputted alphabet.
+import java.util.*;
+class J {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        char c = sc.next().charAt(0);
+        if(Character.isUpperCase(c))
+            c=Character.toLowerCase(c);
+        else if(Character.isLowerCase(c))
+            c=Character.toUpperCase(c);
+        System.out.println(c);
+    }
+}
