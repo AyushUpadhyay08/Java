@@ -1,0 +1,19 @@
+/*Write a program to find the eligibility of admission for a professional course based on the criteria.
+Marks in Maths>=65
+Marks in Chemistry>=55
+Marks in Physics>=50
+*/
+import java.util.*;
+class J {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Marks of Physics,Chemistry ,and Maths");
+        int m = sc.nextInt();
+        int p = sc.nextInt();
+        int c = sc.nextInt();
+        if(m>=65 && p>=55 && c>=50 && (p+c+m)>=180)
+            System.out.println("Student is eligible for this course");
+        else
+            System.out.print("Not eligible for this course");
+    }
+}
